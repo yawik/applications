@@ -1,10 +1,10 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\AbstractModel;
+use Core\Entity\AbstractEntity;
 
-class Employment extends AbstractModel
+class Employment extends AbstractEntity
 {
     protected $startDate;
     protected $endDate;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Applications\Repository\MongoDb\ModelBuilder;
+namespace Applications\Repository\EntityBuilder;
 
-use Core\Repository\MongoDb\Hydrator;
+use Core\Repository\Hydrator;
 
-class ApplicationBuilder extends AbstractModelBuilder
+class ApplicationBuilder extends AbstractEntityBuilder
 {
     protected $repository;
     
@@ -15,9 +15,9 @@ class ApplicationBuilder extends AbstractModelBuilder
         
     }
     
-    protected function constructModelPrototype()
+    protected function constructEntityPrototype()
     {
-        return new \Applications\Model\Application();
+        return new \Applications\Entity\Application();
     }
     
     protected function constructHydrator()
@@ -30,15 +30,15 @@ class ApplicationBuilder extends AbstractModelBuilder
         return $hydrator;
     }
     
-    public function buildModel(array $data = array())
+    public function build($data = null)
     {
-        $model = parent::buildModel($data);
+        $entity = parent::build($data);
         if (!isset($data['educations'])) {
-            $model->setEducations(new \Core\Model\RelationCollection(
+            $entity->setEducations(new \Core\Entity\RelationCollection(
                 array($this->repository, 'fetchEducations'),
-                array($model->id)
+                array($entity->id)
             ));
         }
-        return $model;
+        return $entity;
     }
 }

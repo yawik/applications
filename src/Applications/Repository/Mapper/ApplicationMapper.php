@@ -8,9 +8,9 @@
  */
 
 /** Auth mapper mongodb */
-namespace Applications\Repository\MongoDb\Mapper;
+namespace Applications\Repository\Mapper;
 
-use Core\Repository\MongoDb\Mapper\AbstractMapper;
+use Core\Repository\Mapper\AbstractMapper;
 
 
 /**

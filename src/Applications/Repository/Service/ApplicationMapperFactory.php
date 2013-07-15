@@ -8,11 +8,11 @@
  */
 
 /** Auth mapper mongodb service */
-namespace Applications\Repository\MongoDb\Service;
+namespace Applications\Repository\Service;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use Applications\Repository\MongoDb\Mapper\ApplicationMapper;
+use Applications\Repository\Mapper\ApplicationMapper;
 
 /**
  * User mapper factory

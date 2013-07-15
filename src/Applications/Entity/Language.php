@@ -1,10 +1,10 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\AbstractModel;
+use Core\Entity\AbstractEntity;
 
-class Language extends AbstractModel implements LanguageInterface
+class Language extends AbstractEntity implements LanguageInterface
 {
     
     protected $language;

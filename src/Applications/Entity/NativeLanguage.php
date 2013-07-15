@@ -1,8 +1,8 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\AbstractModel;
+use Core\Entity\AbstractEntity;
 
 class NativeLanguage extends AbstractModel
 {

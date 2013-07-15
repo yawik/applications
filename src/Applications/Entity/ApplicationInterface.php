@@ -1,11 +1,11 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\ModelInterface;
-use Core\Model\DateFormatEnabledInterface;
+use Core\Entity\EntityInterface;
+use Core\Entity\DateFormatEnabledInterface;
 
-interface ApplicationInterface extends ModelInterface, DateFormatEnabledInterface 
+interface ApplicationInterface extends EntityInterface, DateFormatEnabledInterface 
 {
    
     public function setJobId($jobId);

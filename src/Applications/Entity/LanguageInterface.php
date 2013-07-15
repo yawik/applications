@@ -1,10 +1,10 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\ModelInterface;
+use Core\Entity\EntityInterface;
 
-interface LanguageInterface extends ModelInterface
+interface LanguageInterface extends EntityInterface
 {
 	/*
 	 * name of the language de,en,fr

@@ -1,6 +1,6 @@
 <?php
 
-namespace Applications\Repository\MongoDb;
+namespace Applications\Repository;
 
 use Zend\Paginator\Adapter\AdapterInterface;
 

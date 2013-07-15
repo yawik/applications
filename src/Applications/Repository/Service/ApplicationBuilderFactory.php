@@ -1,9 +1,9 @@
 <?php
 
-namespace Applications\Repository\MongoDb\Service;
+namespace Applications\Repository\Service;
 
 use Zend\ServiceManager\FactoryInterface;
-use Applications\Repository\MongoDb\Application;
+use Applications\Repository\Application;
 
 class ApplicationBuilderFactory implements FactoryInterface
 {

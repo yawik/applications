@@ -1,10 +1,10 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\AbstractModel;
+use Core\Entity\AbstractEntity;
 
-class Education extends AbstractModel
+class Education extends AbstractEntity
 {
     protected $applicationId;
     protected $startDate;

@@ -1,16 +1,16 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\AbstractDateFormatEnabledModel;
-use Core\Model\CollectionInterface;
+use Core\Entity\AbstractDateFormatEnabledEntity;
+use Core\Entity\CollectionInterface;
 
 /**
  * @todo write interface
  * @author mathias
  *
  */
-class Application extends AbstractDateFormatEnabledModel implements ApplicationInterface
+class Application extends AbstractDateFormatEnabledEntity implements ApplicationInterface
 {
     protected $jobId;
     protected $dateCreated;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Applications\Repository\MongoDb;
+namespace Applications\Repository;
 
 use Core\Model\ModelInterface;
 use Core\Model\RelationCollection;
@@ -35,7 +35,7 @@ class Application
     public function getApplicationBuilder()
     {
         if (!$this->applicationBuilder) {
-            $builder = new ModelBuilder\ApplicationBuilder($this);
+            $builder = new EntityBuilder\ApplicationBuilder($this);
             $this->setApplicationBuilder($builder);
         }
         return $this->applicationBuilder;
@@ -50,7 +50,7 @@ class Application
     public function getEducationBuilder()
     {
         if (!$this->educationBuilder) {
-            $builder = new ModelBuilder\EducationBuilder();
+            $builder = new EntityBuilder\EducationBuilder();
             $this->setEducationBuilder($builder);
         }
         return $this->educationBuilder;
@@ -116,7 +116,7 @@ class Application
     
     public function save($application)
     {
-        $data = $this->getApplicationBuilder()->unbuildModel($application);
+        $data = $this->getApplicationBuilder()->unbuild($application);
         
         $id = $this->applicationMapper->save($data);
         $application->setId($id);

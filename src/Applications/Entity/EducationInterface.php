@@ -1,10 +1,10 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\ModelInterface;
+use Core\Entity\EntityInterface;
 
-interface EducationInterface extends ModelInterface
+interface EducationInterface extends EntityInterface
 {
     public function setStartDate($date);
     public function getStartDate();

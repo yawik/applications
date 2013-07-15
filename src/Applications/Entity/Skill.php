@@ -1,10 +1,10 @@
 <?php
 
-namespace Applications\Model;
+namespace Applications\Entity;
 
-use Core\Model\AbstractModel;
+use Core\Entity\AbstractEntity;
 
-class Skill extends AbstractModel
+class Skill extends AbstractEntity
 {
     
     protected $nativeLanguages;
