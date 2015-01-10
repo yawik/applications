@@ -7,7 +7,7 @@
  * @license   MIT
  */
 
-/** RatingInterface.php */
+/** StatusInterface.php */
     
 namespace Applications\Entity;
 
